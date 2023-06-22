@@ -1,0 +1,42 @@
+
+.body {
+    background-color: rgb(172, 172, 249);
+}
+
+.footer {
+    background-color: rgb(225, 163, 213);
+    text-align: center; 
+    height: 170px;
+}
+
+.navbar {
+    background-color: rgb(231, 179, 231);
+}
+
+.nav-item {
+    font-weight: bold ;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 800px;
+    object-fit: cover;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.container1 {
+    text-align: center; 
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Pacifico', cursive;
+}
+
+.container2 {
+margin-top: 20px;
+margin-bottom: 30px;
+}
+
+.titulo {
+    color: rgb(214, 23, 23);
+    font-weight: bold ;
+}

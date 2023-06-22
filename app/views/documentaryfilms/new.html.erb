@@ -1,0 +1,28 @@
+<div class="container">
+    <div class="row">
+        <div class="col-4">
+            <h1> Completa el formulario para Documentales</h1>
+
+            <%= form_with url:'/documentaryfilms/create', model: @documentaryfilm, method: :post do |form| %>
+            <div class="form-group mb-3">
+                <%= form.label :name, "Nombre del documental", class: "form-label" %> <br>
+                <%= form.text_field :name, name: "documentaryfilm[name]" %> <br>
+            </div>
+            <div class="form-group mb-3">
+                <%= form.label :synopsis, "Escribe una pequeña sinopsis del documental", class: "form-label" %> <br>
+                <%= form.text_area :synopsis, name: "documentaryfilm[synopsis]", rows: 5, cols:40 %> <br>
+            </div>
+            <div class="form-group mb-3">
+                <%= form.label :director, "Mencional al o los directores del documental", class: "form-label" %> <br>
+                <%= form.text_field :director, name: "documentaryfilm[director]" %> <br>
+            </div>
+            <div class="form-group mb-3">
+                <%= form.submit "Enviar", class: "btn btn-primary" %> <br>
+            </div>
+            <% end %>
+        </div>
+        <div class="col-8">
+            <%= image_tag '3.png', class: "img-fluid", alt:"imagendocumental", style: "width: 1100px; height:600px; object-fit:cover; margin-bottom:40px; " %>
+        </div>
+    </div>
+</div>

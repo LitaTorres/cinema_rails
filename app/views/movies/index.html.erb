@@ -1,0 +1,27 @@
+<div class="container1">
+    <h1>¡Muchas gracias por colaborar con nosotros y completar el formulario de películas! </h1>
+    <h3> Nos ayudas un montón a seguir creciendo </h3>
+</div>
+
+<%= link_to "Completar otro fomurlario para series", series_new_path %> <br>
+<%= link_to "Completar otro fomurlario para peliculas", movies_new_path %> <br>
+<%= link_to "Completar otro fomurlario para documentales", documentaryfilms_new_path %> <br> <br>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-4">
+            <h3 class=titulo> Aportes de otros Usuarios </h3>
+
+            <% @movie.each do |x| %>
+                <h2> <%= x.name %> </h2>
+                <p> <%= x.synopsis %> </p>
+                <p> <%= x.director %> </p>
+            <% end %>
+
+        </div>
+        <div class="col-8">
+            <%= image_tag '4.jpeg', class: "img-fluid", alt:"imagendocumental", style: "width: 900px; height:500px; object-fit:cover; margin-bottom:40px; " %>
+        </div>
+    </div>
+</div>
