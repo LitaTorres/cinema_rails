@@ -1,6 +1,6 @@
 class CreateDocumentaryfilms < ActiveRecord::Migration[7.0]
   def change
-    create_table :documentaryfilms do |t|
+    create_table :documentary_films do |t|
       t.string :name
       t.string :synopsis
       t.string :director

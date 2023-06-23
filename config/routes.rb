@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
   get 'pages/index'
-  get 'documentaryfilms/index'
-  get 'documentaryfilms/create'
-  get 'documentaryfilms/new'
+  get 'documentary_films/index'
+  get 'documentary_films/create'
+  get 'documentary_films/new'
   get 'series/index'
   get 'series/create'
   get 'series/new'
@@ -17,10 +17,10 @@ Rails.application.routes.draw do
   #Agregando rutas para el método post
   post "movies/create" => "movies#create"
   post "series/create" => "series#create"
-  post "documentaryfilms/create" => "documentaryfilms#create"
+  post "documentary_films/create" => "documentary_films#create"
 
  # get "/formulario/respuestadocumentales", to: "documentaryfilms#index"
- #get "/formulariodocumentales", to: "documentaryfilms#new"
+ # get "/formulariodocumentales", to: "documentaryfilms#new"
  # get "/formulario/respuestaseries", to: "series#index"
  # get "/formularioseries", to: "series#new"
  # get '/formulario/respuestapeliculas', to: "moviess#index"

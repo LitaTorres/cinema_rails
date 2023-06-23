@@ -5,7 +5,7 @@
 
 <%= link_to "Completar fomurlario para series", series_new_path %> <br>
 <%= link_to "Completar fomurlario para peliculas", movies_new_path %> <br>
-<%= link_to "Completar fomurlario para documentales", documentaryfilms_new_path %> <br> <br>
+<%= link_to "Completar fomurlario para documentales", documentary_films_new_path %> <br> <br>
 
 
 <div class="container">
@@ -13,7 +13,7 @@
         <div class="col-4">
             <h3 class=titulo> Aportes de otros Usuarios </h3>
 
-            <% @documentaryfilm.each do |x| %>
+            <% @documentary_film.each do |x| %>
                 <h2> <%= x.name %> </h2>
                 <p> <%= x.synopsis %> </p>
                 <p> <%= x.director %> </p>

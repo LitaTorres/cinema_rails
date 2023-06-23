@@ -15,5 +15,5 @@ end
 end
 
 10.times do |x|
-    Documentaryfilm.create(name: "Nombre del documental #{x+1}", synopsis: "Sinopsis realizada #{x+1}", director: "Nombre del o los directores #{x+1}")
+    DocumentaryFilm.create(name: "Nombre del documental #{x+1}", synopsis: "Sinopsis realizada #{x+1}", director: "Nombre del o los directores #{x+1}")
 end
